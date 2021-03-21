@@ -1,0 +1,14 @@
+{application, nxo_template,
+ [{description, "erlydtl helper library"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["MIT"]},
+  {links, []}
+ ]}.
