@@ -22,10 +22,14 @@ Usage
 -----
 
 `nxo_template:compile_all()` compiles all the `*.dtl` files found in
-the configured paths.
+the configured paths. Note that paths are consulted in the order
+specified: similarily named files in later directories will shadow
+those in earlier directories.
 
 `nxo_template:render(Template, Params)` renders the template and
-returns a binary.
+returns a binary.  `Template` here is an atom; for instance, if the
+template file is `hello_world.dtl` the Template parameter would be
+`hello_world`.
 
 Author
 ------
